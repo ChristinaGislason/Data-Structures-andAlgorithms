@@ -1,9 +1,12 @@
 # Challenges
 
 This repository consists of daily challenges. 
-Each challenge will have a whiteboard image of my approach 
+Each challenge will have a whiteboard image of my approach in addition to the actual code implementation.
 
-![Lab01-Screenshot](././Whiteboard-Challenge02-Img.JPG)in addition to the actual code implementation.
+
+![Challenge02-ArrayShift-Screenshot](././Whiteboard-Challenge02-Img.jpg)
+
+
 
 
 
