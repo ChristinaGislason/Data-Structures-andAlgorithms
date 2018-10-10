@@ -4,10 +4,9 @@ This repository consists of daily challenges.
 Each challenge will have a whiteboard image of my approach in addition to the actual code implementation.
 
 
-![Challenge02-ArrayShift-Screenshot](././Challenge02-ShiftArray.JPG)
+![Challenge02-ArrayShift-Screenshot](./Challenge02-ShiftArray.JPG)
 
-
-
+"C:\Users\chris\source\repos\Data-Structures-andAlgorithms\Challenges\Challenge02-ShiftArray.JPG"
 
 
 
