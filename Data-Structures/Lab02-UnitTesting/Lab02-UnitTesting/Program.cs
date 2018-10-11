@@ -18,6 +18,7 @@ namespace Lab02_UnitTesting
 
         public static bool deposit(decimal amount)
         {
+            // only deposit if amount is positive
             if (amount > 0)
             {
                 Balance += amount;
@@ -28,11 +29,17 @@ namespace Lab02_UnitTesting
 
         public static decimal withdraw(decimal amount)
         {
-            Balance -= amount;
-
+            // only withdraw amount if it results in 
+            // balance being greater than zero
+            if (Balance - amount >= 0)
+            {
+                Balance -= amount;
+            }
             return Balance;
         }
+        
 
+        // add method to set the balance to anything
         public static void updateBalance(decimal newBalance)
         {
             Balance = newBalance;
