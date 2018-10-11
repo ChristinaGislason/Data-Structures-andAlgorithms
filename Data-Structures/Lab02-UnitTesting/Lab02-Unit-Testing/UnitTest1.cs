@@ -5,18 +5,38 @@ using Lab02_UnitTesting;
 namespace Lab02_Unit_Testing
 {
     public class UnitTest1
-    {
+    {   
+        // test to view account balance
         [Fact]
-        public void CanReturnBalance()
+        public void CanReturnDefaultBalance()
         {
-            Assert.Equal("100", Program.ViewBalance(100));
+            Program.updateBalance(0);
+            Assert.Equal(0, Program.ViewBalance());
         }
-        /*
+
         [Fact]
-        public void CanDeposit()
+        public void CanDepositMoney()
         {
-            Assert.Equal("90", Program.CanDeposit(10));
+            Program.updateBalance(0);
+            Program.deposit(5);
+            Assert.Equal(5, Program.ViewBalance());
         }
-        */
+
+        [Fact]
+        public void CannotDepositNegativeAmount()
+        {
+            Program.updateBalance(0);
+            Program.deposit(-5);
+            Assert.Equal(0, Program.ViewBalance());
+        }
+
+        [Fact]
+        public void CanWithdrawMoney()
+        {
+            Program.updateBalance(0);
+            Program.deposit(5);
+            Program.withdraw(3);
+            Assert.Equal(2, Program.ViewBalance());
+        }
     }
 }

@@ -4,24 +4,39 @@ namespace Lab02_UnitTesting
 {
     public class Program
     {
-        int num;
-        int deposit;
+        public static decimal Balance = 0;
 
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Welcome to your ATM");
         }
 
-        public static string ViewBalance(int num)
+        public static decimal ViewBalance()
         {
-            return num.ToString();
+            return Balance;
         }
 
-        /*
-        public static string CanDeposit(int deposit)
+        public static bool deposit(decimal amount)
         {
-            return (num + deposit).ToString();
+            if (amount > 0)
+            {
+                Balance += amount;
+                return true;
+            }
+            return false;
         }
-        */
+
+        public static decimal withdraw(decimal amount)
+        {
+            Balance -= amount;
+
+            return Balance;
+        }
+
+        public static void updateBalance(decimal newBalance)
+        {
+            Balance = newBalance;
+        }
+
     }
 }
