@@ -2,7 +2,7 @@
 
 namespace Challenge03_BinarySearchArray
 {
-    class Program
+    public class Program
     {      
         public static void Main(string[] args)
         {
