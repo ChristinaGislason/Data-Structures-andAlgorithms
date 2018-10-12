@@ -6,7 +6,7 @@
 
 2. Challenge: Binary Search Array
 
-3. Challenge: TBD
+3. Challenge: Sum Matrix Rows
 
 4. Challenge: TBD
 
