@@ -13,4 +13,4 @@ Output: [6, 15, 24]
 ## Whiteboard Image
 
 ![Challenge04-SumMatrixRowsPt1](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Challenge04-SumMatrixRowsPt1.jpg)
-![Challenge04-SumMatrixRowsPt2](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Challenge04-SumMatrixRowsPt1.jpg)
+![Challenge04-SumMatrixRowsPt2](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Challenge04-SumMatrixRowPt2.jpg)
