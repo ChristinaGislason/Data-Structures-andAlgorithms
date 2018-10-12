@@ -18,23 +18,21 @@ namespace Challenge04_SumMatrixRows
                 { 1, 2, 3 }, 
                 { 4, 5, 6 }, 
                 { 7, 8, 9 }
-            };
-            int[] matrixRow;
+            };           
             int[] outputArray;
-            int row = i;
-            int column = j;
             int sum;
 
-            
+
             // iterate through rows in matrix to sum values 
             // output sum of each row in a single array
-            for (int i = 0; i < matrixRow[i].Length; i++)
+            for (int j = 0; j < inputMatrix.Length; j++)
             {
-                sum += arr[i];
-                for (j = 0; j < 2; j++)
-                {
-                    Console.WriteLine("a[{0},{1}] = {2}", i, j, a[i, j]);
-                }
+                //for (int i = 0; i < inputMatrix.getLength(i); i++)                         
+                //{
+                //    sum += inputMatrix[j, i];
+                //    //Console.WriteLine("{0}", outputArray[i, j]);
+                //    Console.WriteLine("{outputArray}")
+                //}
             }
         }
     }
