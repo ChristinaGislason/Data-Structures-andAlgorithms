@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
-1. Challenge: Array Shift
+1. Challenge: Shift Array
 
-2. Challenge: TBD
+2. Challenge: Binary Search Array
 
 3. Challenge: TBD
 
