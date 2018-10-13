@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Challenge04-SumMatrixRows\Challenge04-SumMatrixRows.csproj" />
+    <ProjectReference Include="..\Challenge04-FibonacciSequence\Challenge04-FibonacciSequence.csproj" />
   </ItemGroup>
 
 </Project>

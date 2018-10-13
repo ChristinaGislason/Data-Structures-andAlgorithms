@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.1</TargetFramework>
-    <RootNamespace>Challenge04_SumMatrixRows</RootNamespace>
+    <RootNamespace>Challenge04_FibonacciSequence</RootNamespace>
   </PropertyGroup>
 
 </Project>
