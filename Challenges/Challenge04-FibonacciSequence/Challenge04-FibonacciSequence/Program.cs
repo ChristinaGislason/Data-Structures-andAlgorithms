@@ -2,11 +2,26 @@
 
 namespace Challenge04_FibonacciSequence
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+        }
+
+        public static int FibRecursive(int n)
+        {
+            if(n == 0)
+            {
+                return 0;
+            }
+            else if(n == 1) {
+                return 1; 
+            }
+            else
+            {
+                return FibRecursive(n - 1) + FibRecursive(n - 2);
+            } 
         }
     }
 }
