@@ -9,6 +9,11 @@ namespace Challenge04_FibonacciSequence
             Console.WriteLine("Hello World!");
         }
 
+        /// <summary>
+        /// Recursively execute Fibonacci sequence
+        /// </summary>
+        /// <param name="n"></param>
+        /// <returns></returns>
         public static int FibRecursive(int n)
         {
             if(n == 0)
@@ -22,6 +27,6 @@ namespace Challenge04_FibonacciSequence
             {
                 return FibRecursive(n - 1) + FibRecursive(n - 2);
             } 
-        }
+        }   
     }
 }
