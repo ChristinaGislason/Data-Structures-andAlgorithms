@@ -8,7 +8,7 @@
 
 3. Challenge: Sum Matrix Rows
 
-4. Challenge: TBD
+4. Challenge: Fibonacci Sequence
 
 5. Challenge: TBD
 
