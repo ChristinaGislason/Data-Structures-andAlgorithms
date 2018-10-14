@@ -1,5 +1,5 @@
 # Fibonacci Sequence
-Gener.ate the nth Fibonacci number, 2 different ways.
+Generate the nth Fibonacci number.
 
 ## Challenge
 
@@ -7,6 +7,6 @@ Create a function that accepts an integer, and returns the nth number in the Fib
 
 ## Solution
 
-Input: Fibonacci sequence of 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ; nth number = 3 
+Input: Fibonacci sequence of 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ; n = 3 
 
-Output: 
+Output: 2
