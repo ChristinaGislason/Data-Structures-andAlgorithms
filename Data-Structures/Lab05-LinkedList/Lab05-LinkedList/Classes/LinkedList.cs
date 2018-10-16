@@ -35,7 +35,6 @@ namespace Lab05_LinkedList.Classes
             Current = Head;
             node.Next = Head;
             Head = node;
-            Current = Head;
         }
 
         /// <summary>
@@ -105,22 +104,20 @@ namespace Lab05_LinkedList.Classes
         public void AddAfter(Node newNode, Node existingNode)
         {
             Current = Head;
-            if (Head.Value == existingNode.Value)
-            {
-                Before(newNode);
-                return;
-            }
 
             while (Current.Next != null)
             {
-                if (Current.Next.Value == existingNode.Value)
+                if (Current.Value == existingNode.Value)
                 {
-                    newNode.Next = existingNode;
+                    newNode.Next = Current.Next;
                     Current.Next = newNode;
                     return;
                 }
                 Current = Current.Next;            
             }
+            newNode.Next = Current.Next;
+            Current.Next = newNode;
+            Current = Head;
         }
     }
 }
