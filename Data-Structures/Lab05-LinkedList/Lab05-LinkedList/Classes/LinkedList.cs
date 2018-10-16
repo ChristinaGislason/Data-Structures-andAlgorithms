@@ -27,9 +27,19 @@ namespace Lab05_LinkedList.Classes
         }
 
         /// <summary>
-		///	Prints the list node by node to the console
-		///	time: O(n)
-		///	space: O(1)
+		/// Adds a node to the beginning of the LL (sometimes called Insert)
+		/// </summary>
+		/// <param name="node">the node that will be added</param>
+		public void Add(Node node)
+        {
+            Current = Head;
+            node.Next = Head;
+            Head = node;
+            Current = Head;
+        }
+
+        /// <summary>
+		///	Prints the list node by node to the console	
 		/// </summary>
 		public void Print()
         {
@@ -43,6 +53,74 @@ namespace Lab05_LinkedList.Classes
 
             Console.Write($"{Current.Value} --> NULL\n");
             Current = Head;
+        }
+
+        /// <summary>
+		/// Appends a node to the end of the LL	
+		/// </summary>
+		/// <param name="newNode">the node to be added</param>
+		public void Append(Node newNode)
+        {
+            Current = Head;
+            while (Current.Next != null)
+            {
+                Current = Current.Next;
+            }
+
+            Current.Next = newNode;
+            Current = Head;
+        }
+
+        /// <summary>
+		/// inserts a node into the list before a given node		
+		/// </summary>
+		/// <param name="newNode">the node to be added</param>
+		/// <param name="existingNode">the node that will follow the newly added node</param>
+		public void AddBefore(Node newNode, Node existingNode)
+        {
+            Current = Head;
+            if (Head.Value == existingNode.Value)
+            {
+                Add(newNode);
+                return;
+            }
+
+            while (Current.Next != null)
+            {
+                if (Current.Next.Value == existingNode.Value)
+                {
+                    newNode.Next = existingNode;
+                    Current.Next = newNode;
+                    return;
+                }
+                Current = Current.Next;
+            }
+        }
+
+        /// <summary>
+        /// inserts a node into the list after a given node
+        /// </summary>
+        /// <param name="newNode"></param>
+        /// <param name="existingNode"></param>
+        public void AddAfter(Node newNode, Node existingNode)
+        {
+            Current = Head;
+            if (Head.Value == existingNode.Value)
+            {
+                Before(newNode);
+                return;
+            }
+
+            while (Current.Next != null)
+            {
+                if (Current.Next.Value == existingNode.Value)
+                {
+                    newNode.Next = existingNode;
+                    Current.Next = newNode;
+                    return;
+                }
+                Current = Current.Next;            
+            }
         }
     }
 }

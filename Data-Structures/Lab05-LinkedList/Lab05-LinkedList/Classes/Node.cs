@@ -22,6 +22,6 @@ namespace Lab05_LinkedList.Classes
         public Node(object value)
         {
             Value = value;
-        }
+        }   
     }
 }
