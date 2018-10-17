@@ -6,10 +6,8 @@
 
 2. Challenge: Binary Search Array
 
-3. Challenge: Sum Matrix Rows
+3. Challenge: Fibonacci Sequence
 
-4. Challenge: Fibonacci Sequence
+4. Challenge: Linked List
 
 5. Challenge: TBD
-
-6. Challenge: TBD
