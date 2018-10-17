@@ -13,3 +13,4 @@ Implement a Node Class (with Next and Value properties), a LinkedList Class (Wit
 
 ## Solution
 
+![Lab05-LinkedList-ScreenCapture](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Lab05-LinkedList-ScreenCapture.JPG)
