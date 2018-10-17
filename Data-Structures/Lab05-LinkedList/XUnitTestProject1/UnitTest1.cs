@@ -23,12 +23,5 @@ namespace XUnitTestProject1
             linkedList1.Append(node1);
             Assert.Equal(10, linkedList1.Current.Next.Value);
         }
-
-
-        
-
-
-
-
     }
 }
