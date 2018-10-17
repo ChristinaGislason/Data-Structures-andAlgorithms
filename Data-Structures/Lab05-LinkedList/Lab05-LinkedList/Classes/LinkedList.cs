@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab05_LinkedList.Classes
 {
-    class LinkedList
+    public class LinkedList
     {
         /// <summary>
 		///	Always points to the first node in the LL
@@ -27,10 +27,10 @@ namespace Lab05_LinkedList.Classes
         }
 
         /// <summary>
-		/// Adds a node to the beginning of the LL (sometimes called Insert)
+		/// Inserts a node to the beginning of the LL (sometimes called Insert)
 		/// </summary>
 		/// <param name="node">the node that will be added</param>
-		public void Add(Node node)
+		public void Insert(Node node)
         {
             Current = Head;
             node.Next = Head;
@@ -80,7 +80,7 @@ namespace Lab05_LinkedList.Classes
             Current = Head;
             if (Head.Value == existingNode.Value)
             {
-                Add(newNode);
+                Insert(newNode);
                 return;
             }
 
