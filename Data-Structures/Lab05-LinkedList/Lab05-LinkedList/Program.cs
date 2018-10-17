@@ -7,8 +7,6 @@ namespace Lab05_LinkedList
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
             Node node1 = new Node(7);
             Node node2 = new Node("Hello");
             Node node3 = new Node("puppies");
@@ -20,7 +18,6 @@ namespace Lab05_LinkedList
             thisList.AddAfter(node4, node2);
             thisList.Print();
             Console.ReadLine();
-
         }
     }
 }
