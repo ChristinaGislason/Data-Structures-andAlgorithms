@@ -1,3 +1,3 @@
-##Table of Contents
+## Table of Contents
 
-Linked List Implementation
+#### Linked List Implementation
