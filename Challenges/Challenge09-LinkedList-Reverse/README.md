@@ -14,4 +14,4 @@ Output: head->[1]->[2]->[3]
 Output
 head->['a']->['b']->['c']	head->['c']->['b']->['a']
 
-![Challenge09-LinkedList-Reverse-ScreenCapture]( https://github.com/ChristinaGislason/Data-Structures-andAlgorithms)
+![Challenge09-LinkedList-Reverse-ScreenCapture](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Challenges/Challenge09-LinkedList-Reverse/Challenge09-LinkedList-Reverse-ScreenCapture.JPG)
