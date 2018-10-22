@@ -28,6 +28,7 @@ namespace StackQueueDemo.Classes
             temp.Next = null;
             return temp;
         }
+
         //Push
         public void Push(Node node)
         {

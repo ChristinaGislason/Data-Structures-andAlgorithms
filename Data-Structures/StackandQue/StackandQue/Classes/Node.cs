@@ -7,6 +7,7 @@ namespace StackQueueDemo.Classes
 {
     public class Node
     {
+        // set properties of Node class
         public object Value { get; set; }
         public Node Next { get; set; }
 
