@@ -13,3 +13,5 @@ The Stack instances have only push and pop methods, and a size property.
 Instantiate these Stack objects in the Queue constructor.
 
 ## Solution
+
+![Challenge11-QueueWithStacks- Whiteboard](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Whiteboard-Challenge11-QueueWithStacks.jpg)
