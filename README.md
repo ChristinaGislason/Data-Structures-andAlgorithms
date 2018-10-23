@@ -17,3 +17,5 @@
 7. Challenge: Linked List Reverse
 
 8. Challenge: Queue with Stacks
+
+9. FIFO Animal Shelter
