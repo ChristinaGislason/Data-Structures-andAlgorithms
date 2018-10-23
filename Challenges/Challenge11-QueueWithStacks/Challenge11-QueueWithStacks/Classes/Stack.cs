@@ -16,11 +16,10 @@ namespace Challenge11_QueueWithStacks.Classes
         //Peek
         public Node Peek()
         {
-            // this is a great place for a try/catch (if you want)
             return Top;
         }
 
-        //Pop
+        //Pop & determine size of stack
         public Node Pop()
         {
             Node temp = Peek();
@@ -30,7 +29,7 @@ namespace Challenge11_QueueWithStacks.Classes
             return temp;
         }
         
-        //Push
+        //Push & determine size of stack
         public void Push(Node node)
         {
             node.Next = Top;
@@ -38,6 +37,5 @@ namespace Challenge11_QueueWithStacks.Classes
             Size += 1;
         }
 
-        //Define Size
     }
 }   
