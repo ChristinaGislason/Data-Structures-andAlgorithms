@@ -12,3 +12,5 @@ Implement the following methods:
 If pref is ‘dog’, return the longest-waiting dog. For anything else, return either a cat or a dog.
 
 ## Solution
+
+![Challenge12-FIFOAnimalShelter-Whiteboard](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Challenge12-FIFOAnimalShelter.jpg)
