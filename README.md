@@ -18,7 +18,8 @@
 
 8. Challenge: Queue with Stacks
 
-9. FIFO Animal Shelter
+9. Challenge: FIFO Animal Shelter
 
-10. Multi Bracket Validation
+10. Challenge: Multi Bracket Validation
 
+11. Challenge: Max Stack
