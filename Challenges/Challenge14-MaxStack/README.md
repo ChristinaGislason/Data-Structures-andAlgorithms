@@ -9,3 +9,4 @@ Assume only numeric values will be stored in the Stack.
 
 ## Solution
 
+![Challenge14-MaxStack-ScreenCapture](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Challenge14-MaxStack-Screencapture.JPG)
