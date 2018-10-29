@@ -23,3 +23,5 @@
 10. Challenge: Multi Bracket Validation
 
 11. Challenge: Max Stack
+
+12. Challenge: Fizz Buzz Tree
