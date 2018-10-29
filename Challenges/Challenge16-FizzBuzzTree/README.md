@@ -11,3 +11,5 @@ and change the value of each of the nodes respectively. Return the tree with its
 Instead of changing the values of the nodes, output to the console the new values respectively.
 
 ## Solution
+
+![Challenge16-FizzBuzzTree-Screencapture](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Challenge16-FizzBuzzTree.jpg)
