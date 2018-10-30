@@ -19,7 +19,25 @@ namespace XUnitTestProject1
             Assert.Equal(1, testVar.Value);
         }
 
-        // test node popped from stack
+        /// <summary>
+        /// test node popped from stack
+        /// </summary>        
+        [Fact]
+        public void TestPopNodeFromStack()
+        {
+            Node testNode1 = new Node(5);
+            Node testNode2 = new Node(10);
+            Stack testStack = new Stack(testNode1);
+            testStack.Push(testNode1);
+            testStack.Push(testNode2);
+            testStack.Pop();
+            Node testVar = testStack.Peek();
+            Assert.Equal(5, testVar.Value);
+        }
+
+        // peek top node
+        // return value from new top node
+
         // test peeking top node of stack
         // test enqueue node onto queue
         // test dequeue node off queue
