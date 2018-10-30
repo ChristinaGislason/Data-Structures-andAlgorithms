@@ -80,7 +80,17 @@ namespace XUnitTestProject1
             Assert.Equal(10, testVar.Value);
         }
 
-        // test peek at front of queue
-
+        /// <summary>
+        /// test to dequeue node off queue
+        /// </summary>        
+        [Fact]
+        public void TestPeekAtFrontOfQueue()
+        {
+            Node testNode1 = new Node(5);
+            Queue testQueue = new Queue(testNode1);
+            testQueue.Enqueue(testNode1);
+            Node testVar = testQueue.Peek();
+            Assert.Equal(5, testVar.Value);
+        }
     }
 }
