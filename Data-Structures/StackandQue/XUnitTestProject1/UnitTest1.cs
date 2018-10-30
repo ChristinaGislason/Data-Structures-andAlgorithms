@@ -35,10 +35,20 @@ namespace XUnitTestProject1
             Assert.Equal(5, testVar.Value);
         }
 
-        // peek top node
-        // return value from new top node
+        /// <summary>
+        /// test to peek top node of stack
+        /// </summary>        
+        [Fact]
+        public void TestPeekTopNodeOfStack()
+        {
+            Node testNode = new Node(5);
+            Stack testStack = new Stack(testNode);
+            testStack.Push(testNode);
+            testStack.Peek();
+            Node testVar = testStack.Peek();
+            Assert.Equal(5, testVar.Value);
+        }
 
-        // test peeking top node of stack
         // test enqueue node onto queue
         // test dequeue node off queue
         // test peek at front of queue
