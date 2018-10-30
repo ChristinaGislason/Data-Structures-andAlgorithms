@@ -49,7 +49,21 @@ namespace XUnitTestProject1
             Assert.Equal(5, testVar.Value);
         }
 
-        // test enqueue node onto queue
+        /// <summary>
+        /// test to enqueue node onto queue
+        /// </summary>        
+        [Fact]
+        public void TestEnqueueNodeToQueue()
+        {
+            Node testNode1 = new Node(5);
+            Node testNode2 = new Node(10);
+            Queue testQueue = new Queue(testNode1);
+            testQueue.Enqueue(testNode1);
+            testQueue.Enqueue(testNode2);
+            Node testVar = testQueue.Peek();
+            Assert.Equal(5, testVar.Value);
+        }
+
         // test dequeue node off queue
         // test peek at front of queue
 
