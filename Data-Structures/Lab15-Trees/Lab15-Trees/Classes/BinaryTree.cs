@@ -20,28 +20,60 @@ namespace Lab15_Trees.Classes
             Root = node;
         }
 
-        public void Preorder()
+        /// <summary>
+        /// Traverses Binary Tree in order of root, left, right.
+        /// </summary>
+        /// <param name="Root"></param>
+        public void PreOrder(Node Root)
         {
-            int output = Root.Value;
+            object output = Root.Value;
 
             if(Root.leftChild != null)
             {
-                output = Root.leftChild;
+                PreOrder(Root.leftChild);
             }
+            else if(Root.rightChild != null)
+            {
+                PreOrder(Root.rightChild);
+            }
+        }
+
+        /// <summary>
+        ///  Traverses Binary Tree in order of left, root, right.
+        /// </summary>
+        /// <param name="Root"></param>
+        public void InOrder(Node Root)
+        {        
+            if (Root.leftChild != null)
+            {
+                InOrder(Root.leftChild);
+            }
+
+            object output = Root.Value;
+
             if (Root.rightChild != null)
             {
-                output = Root.rightChild;
+                InOrder(Root.rightChild);
             }
+            
         }
 
-        public void Inorder()
+        /// <summary>
+        ///  Traverses Binary Tree in order of left, right, root.
+        /// </summary>
+        /// <param name="Root"></param>
+        public void PostOrder(Node Root)
         {
+            if (Root.leftChild != null)
+            {
+                PostOrder(Root.leftChild);
+            }
+            else if (Root.rightChild != null)
+            {
+                PostOrder(Root.rightChild);
+            }
 
-        }
-
-        public void Postorder()
-        {
-
+            object output = Root.Value;
         }
 
     }
