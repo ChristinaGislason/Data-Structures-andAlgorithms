@@ -19,7 +19,7 @@ namespace Lab15_Trees.Classes
         /// <summary>
         /// value contained in the node
         /// </summary> 
-        public int Value { get; set; }
+        public object Value { get; set; }
 
         /// <summary>
         /// node constructor
