@@ -12,3 +12,4 @@ Define a method named search that brings in a value of node, and returns the nod
 
 ## Solution
 
+![Lab15-Trees-Screencapture](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Lab15-Trees-Screencapture.JPG)
