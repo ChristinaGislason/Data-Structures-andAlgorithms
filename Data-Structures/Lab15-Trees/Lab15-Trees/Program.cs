@@ -73,7 +73,7 @@ namespace Lab15_Trees
             Node node7 = new Node(250);
             binarySearchTree.AddToBST(node7);
         
-            // write BST PreOrder list to console
+            // write BST InOrder list to console
             Console.WriteLine("Binary Search Tree InOrder list:");
             List<Node> bstInorderList = binarySearchTree.InOrder();
             foreach (Node node in bstInorderList)
@@ -82,6 +82,13 @@ namespace Lab15_Trees
             }
             Console.WriteLine("\n-----");
 
+            // Input value and search BST to return node with that value
+            int value = 250;
+            Node resultNode = binarySearchTree.SearchBST(value);
+            if (resultNode.Value == value)
+            {
+                Console.WriteLine($"{value} found in node within the BST!");
+            }
         }
     }
 }

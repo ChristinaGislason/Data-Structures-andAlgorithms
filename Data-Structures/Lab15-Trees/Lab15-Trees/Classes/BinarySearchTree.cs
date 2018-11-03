@@ -27,12 +27,12 @@ namespace Lab15_Trees.Classes
         public void AddToBST(Node node, Node current = null)
         {
             // make current node Root for the first call to AddToBST
-            if (current == null)
+            if(current == null)
             {
                 current = Root;
             }
 
-            if (node.Value < current.Value)
+            if(node.Value < current.Value)
             {
                 // if left child is null, then insert node
                 if (current.leftChild == null)
@@ -45,10 +45,10 @@ namespace Lab15_Trees.Classes
                 }
             }
 
-            if (node.Value > current.Value)
+            if(node.Value > current.Value)
             {
                 // if right child is null, then insert node
-                if (current.rightChild == null)
+                if(current.rightChild == null)
                 {
                     current.rightChild = node;
                 }
@@ -65,34 +65,53 @@ namespace Lab15_Trees.Classes
         /// <param name="Root"></param>
         public List<Node> InOrder(Node node = null, List<Node> nodes = null)
         {
-            if (nodes == null)
+            if(nodes == null)
             {
                 nodes = new List<Node>();
             }
 
-            if (node == null)
+            if(node == null)
             {
                 node = Root;
             }
 
-            if (node.leftChild != null)
+            if(node.leftChild != null)
             {
                 InOrder(node.leftChild, nodes);
             }
 
             nodes.Add(node);
 
-            if (node.rightChild != null)
+            if(node.rightChild != null)
             {
                 InOrder(node.rightChild, nodes);
             }
 
             return nodes;
         }
+        
+        // Search Binary Search Tree by input value and return the node
+        public Node SearchBST(int value, Node current = null)
+        {
+            if(current == null)
+            {
+                current = Root;
+            }
 
-        //public void Search()
-        //{
+            if(value == current.Value)
+            {
+                return current;
+            }
 
-        //} 
+            if(value < current.Value)
+            {
+                return SearchBST(value, current.leftChild);
+            }
+
+            else
+            {
+                return SearchBST(value, current.rightChild);
+            }
+        }
     }
 }
