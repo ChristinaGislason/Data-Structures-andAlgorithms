@@ -19,15 +19,18 @@ namespace Lab15_Trees.Classes
         /// <summary>
         /// value contained in the node
         /// </summary> 
-        public object Value { get; set; }
+        public int Value { get; set; }
 
         /// <summary>
         /// node constructor
         /// </summary>
         /// <param name="value"></param>
-        public Node(int value)
+        public Node(int value, Node left = null, Node right = null)
         {
             Value = value;
+            leftChild = left;
+            rightChild = right;
         }
+
     }
 }
