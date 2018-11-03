@@ -46,7 +46,7 @@ namespace Lab15_Trees.Classes
             {
                 PreOrder(node.rightChild, nodes);
             }
-
+            
             return nodes;
 
         }
@@ -55,37 +55,62 @@ namespace Lab15_Trees.Classes
         ///  Traverses Binary Tree in order of left, root, right.
         /// </summary>
         /// <param name="Root"></param>
-        public void InOrder(Node Root)
-        {        
-            if (Root.leftChild != null)
+        public List<Node> InOrder(Node node = null, List<Node> nodes = null)
+        {
+            if (nodes == null)
             {
-                InOrder(Root.leftChild);
+                nodes = new List<Node>();
             }
 
-            object output = Root.Value;
-
-            if (Root.rightChild != null)
+            if (node == null)
             {
-                InOrder(Root.rightChild);
-            }   
+                node = Root;
+            }           
+
+            if (node.leftChild != null)
+            {
+                InOrder(node.leftChild, nodes);
+            }
+
+            nodes.Add(node);
+
+            if (node.rightChild != null)
+            {
+                InOrder(node.rightChild, nodes);
+            }
+
+            return nodes;
         }
 
         /// <summary>
         ///  Traverses Binary Tree in order of left, right, root.
         /// </summary>
         /// <param name="Root"></param>
-        public void PostOrder(Node Root)
+        public List<Node> PostOrder(Node node = null, List<Node> nodes = null)
         {
-            if (Root.leftChild != null)
+            if (nodes == null)
             {
-                PostOrder(Root.leftChild);
-            }
-            else if (Root.rightChild != null)
-            {
-                PostOrder(Root.rightChild);
+                nodes = new List<Node>();
             }
 
-            object output = Root.Value;
+            if (node == null)
+            {
+                node = Root;
+            }
+
+            if (node.leftChild != null)
+            {
+                PostOrder(node.leftChild, nodes);
+            }    
+
+            if (node.rightChild != null)
+            {
+                PostOrder(node.rightChild, nodes);
+            }
+
+            nodes.Add(node);
+
+            return nodes;
         }
     }
 }

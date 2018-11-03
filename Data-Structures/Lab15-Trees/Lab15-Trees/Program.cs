@@ -21,16 +21,24 @@ namespace Lab15_Trees
             // add root node to binary tree
             BinaryTree binaryTree = new BinaryTree(nodeA);
 
+            // write PreOrder list to console
             Console.WriteLine("PreOrder List:");
             List<Node> preorderList = binaryTree.PreOrder();
             foreach(Node node in preorderList)
             {
                 Console.Write($"{node.Value} ");
             }
-            Console.WriteLine("-----");
+            Console.WriteLine("\n-----");
 
+            // write InOrder list to console
+            Console.WriteLine("InOrder List:");
+            List<Node> inorderList = binaryTree.InOrder();
+            foreach (Node node in inorderList)
+            {
+                Console.Write($"{node.Value} ");
+            }
+            Console.WriteLine("\n-----");
 
-            
             //
             //binaryTree.PreOrder();
             //Console.WriteLine();
