@@ -12,4 +12,6 @@ Instead of changing the values of the nodes, output to the console the new value
 
 ## Solution
 
-![Challenge16-FizzBuzzTree-Screencapture](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Challenge16-FizzBuzzTree.jpg)
+![Challenge16-FizzBuzzTree-Whiteboardcapture](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Challenge16-FizzBuzzTree.jpg)
+
+![Challenge16-FizzBuzzTree-Screencapture](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/Challenge16-FizzBuzzTree-Screencapture.JPG)
