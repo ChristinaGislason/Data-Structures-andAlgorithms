@@ -12,7 +12,7 @@ namespace Lab15_Trees.Classes
         public Node Root { get; set; }
 
         /// <summary>
-        /// Binary Trees requires a node at time of creation to be the Root
+        /// Binary Tree constructor that requires a node at time of creation to be the Root
         /// </summary>
         /// <param name="node">The node that will become the Root</param>
         public BinaryTree(Node node)
@@ -24,18 +24,31 @@ namespace Lab15_Trees.Classes
         /// Traverses Binary Tree in order of root, left, right.
         /// </summary>
         /// <param name="Root"></param>
-        public void PreOrder(Node Root)
+        public List<Node> PreOrder(Node node = null, List<Node> nodes = null)
         {
-            object output = Root.Value;
+            if(nodes == null)
+            {
+                nodes = new List<Node>(); 
+            }
 
-            if(Root.leftChild != null)
+            if(node == null)
             {
-                PreOrder(Root.leftChild);
+                node = Root;
             }
-            else if(Root.rightChild != null)
+
+            nodes.Add(node);
+
+            if(node.leftChild != null)
             {
-                PreOrder(Root.rightChild);
+                PreOrder(node.leftChild, nodes);
             }
+            if(node.rightChild != null)
+            {
+                PreOrder(node.rightChild, nodes);
+            }
+
+            return nodes;
+
         }
 
         /// <summary>
@@ -54,8 +67,7 @@ namespace Lab15_Trees.Classes
             if (Root.rightChild != null)
             {
                 InOrder(Root.rightChild);
-            }
-            
+            }   
         }
 
         /// <summary>
@@ -75,6 +87,5 @@ namespace Lab15_Trees.Classes
 
             object output = Root.Value;
         }
-
     }
 }

@@ -6,14 +6,15 @@ namespace Lab15_Trees.Classes
 {
     class BinarySearchTree
     {
-       public void Add()
-       {
+        
+       // public void Add(Node)
+       //{
 
-       }
+       //}
 
-       public void Search()
-       {
+       //public void Search()
+       //{
 
-       } 
+       //} 
     }
 }
