@@ -6,8 +6,6 @@ namespace Lab15_Trees.Classes
 {
     class Node
     {
-        private Node node;
-
         /// <summary>
         /// pointer to the left child node
         /// </summary>
@@ -21,13 +19,13 @@ namespace Lab15_Trees.Classes
         /// <summary>
         /// value contained in the node
         /// </summary> 
-        public object Value { get; set; }
+        public int Value { get; set; }
 
         /// <summary>
         /// node constructor
         /// </summary>
         /// <param name="value"></param>
-        public Node(object value, Node left = null, Node right = null)
+        public Node(int value, Node left = null, Node right = null)
         {
             Value = value;
             leftChild = left;

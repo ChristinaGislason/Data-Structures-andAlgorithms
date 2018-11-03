@@ -57,24 +57,24 @@ namespace Lab15_Trees.Classes
         /// <param name="Root"></param>
         public List<Node> InOrder(Node node = null, List<Node> nodes = null)
         {
-            if (nodes == null)
+            if(nodes == null)
             {
                 nodes = new List<Node>();
             }
 
-            if (node == null)
+            if(node == null)
             {
                 node = Root;
             }           
 
-            if (node.leftChild != null)
+            if(node.leftChild != null)
             {
                 InOrder(node.leftChild, nodes);
             }
 
             nodes.Add(node);
 
-            if (node.rightChild != null)
+            if(node.rightChild != null)
             {
                 InOrder(node.rightChild, nodes);
             }
@@ -88,22 +88,22 @@ namespace Lab15_Trees.Classes
         /// <param name="Root"></param>
         public List<Node> PostOrder(Node node = null, List<Node> nodes = null)
         {
-            if (nodes == null)
+            if(nodes == null)
             {
                 nodes = new List<Node>();
             }
 
-            if (node == null)
+            if(node == null)
             {
                 node = Root;
             }
 
-            if (node.leftChild != null)
+            if(node.leftChild != null)
             {
                 PostOrder(node.leftChild, nodes);
             }    
 
-            if (node.rightChild != null)
+            if(node.rightChild != null)
             {
                 PostOrder(node.rightChild, nodes);
             }
