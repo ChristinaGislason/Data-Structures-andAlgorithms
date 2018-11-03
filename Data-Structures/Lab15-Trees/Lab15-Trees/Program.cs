@@ -39,13 +39,14 @@ namespace Lab15_Trees
             }
             Console.WriteLine("\n-----");
 
-            //
-            //binaryTree.PreOrder();
-            //Console.WriteLine();
-
-            //binaryTree.InOrder(nodeA);
-
-            //binaryTree.PostOrder(nodeA);
+            // write PostOrder list to console
+            Console.WriteLine("PostOrder List:");
+            List<Node> postorderList = binaryTree.PostOrder();
+            foreach (Node node in postorderList)
+            {
+                Console.Write($"{node.Value} ");
+            }
+            Console.WriteLine("\n-----");
         }
     }
 }
