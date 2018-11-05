@@ -25,3 +25,7 @@
 11. Challenge: Max Stack
 
 12. Challenge: Fizz Buzz Tree
+
+13. Challenge: Breadth-First Traversal
+
+14. Challenge: Max Value in Binary Tree
