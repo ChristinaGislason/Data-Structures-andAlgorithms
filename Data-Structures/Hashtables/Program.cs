@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hashtables.Classes;
+using System;
 
 namespace Hashtables
 {
@@ -6,7 +7,19 @@ namespace Hashtables
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            // Add four elements to Hashtable.
+            Hashtable hashtable = new Hashtable();
+            hashtable.Add("First", "Tommy");
+            hashtable.Add("Second", "Jill");
+            hashtable.Add("Third", "Peter");
+            hashtable.Add("Fourth", "Sunny");
+
+            // See if the Hashtable contains this key.
+            //Console.WriteLine(hashtable.ContainsKey("Perimeter"));
+
+            // Test the Contains method.
+            // ... It works the same way.
+            //Console.WriteLine(hashtable.Contains("Area"));
         }
     }
 }
