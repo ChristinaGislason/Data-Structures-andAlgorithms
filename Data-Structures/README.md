@@ -5,3 +5,5 @@
 #### IMPLEMENT: Stack and Queue
 
 #### IMPLEMENT: Binary Tree & Binary Search Tree
+
+#### IMPLMENT: Hash Tables
