@@ -11,7 +11,7 @@ namespace MergeSort
             MergeSort(myArray);
         }
 
-        static void MergeSort(int[] myArray)
+        public static void MergeSort(int[] myArray)
         {
             if (myArray.Length > 1)
             {
@@ -27,14 +27,14 @@ namespace MergeSort
                 int[] rightArray = new int[rightSize];
                 Array.Copy(myArray, myArray.Length / 2, rightArray, 0, rightSize);
 
-                MergeSort(leftArray);
+                MergeSort(leftArray);   
                 MergeSort(rightArray);
                 Merge(leftArray, rightArray, myArray);
             }
             Console.WriteLine(string.Join(",", myArray));
         }
 
-        static int[] Merge(int[] leftArray, int[] rightArray, int[] mainArray)
+        public static int[] Merge(int[] leftArray, int[] rightArray, int[] mainArray)
         {
             // Left pointer
             int i = 0;
