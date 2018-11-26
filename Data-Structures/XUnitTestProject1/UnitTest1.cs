@@ -29,5 +29,17 @@ namespace XUnitTestProject1
             Program.QuickSort(arr, 0, arr.Length -1);
             Assert.Equal(expectedArr, arr);
         }
+
+        /// <summary>
+        /// Test QuickSort method for large array
+        /// </summary>
+        [Fact]
+        public void TestQuickSortForLargeArray()
+        {
+            int[] arr = { 365, 555, 10, 252, 1001, 7 };
+            int[] expectedArr = { 7, 10, 252, 365, 555, 1001 };
+            Program.QuickSort(arr, 0, arr.Length -1);
+            Assert.Equal(expectedArr, arr);
+        }
     }
 }
