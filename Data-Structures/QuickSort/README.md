@@ -10,3 +10,4 @@ Output a sorted array.
 
 ## SOLUTION
 
+![QuickSortScreenCapture](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/QuickSortCapture.JPG)
