@@ -6,4 +6,8 @@
 
 #### IMPLEMENT: Binary Tree & Binary Search Tree
 
-#### IMPLMENT: Hash Tables
+#### IMPLEMENT: Hash Tables
+
+#### IMPLEMENT: Quick Sort
+
+#### IMPLEMENT: Merge Sort
