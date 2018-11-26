@@ -10,4 +10,4 @@ Output the sorted array.
 
 ## SOLUTION
 
-
+![MergeSortCapture](https://github.com/ChristinaGislason/Data-Structures-andAlgorithms/blob/master/Assets/MergeSortCapture.JPG)
