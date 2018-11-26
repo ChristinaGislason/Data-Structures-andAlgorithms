@@ -67,12 +67,12 @@ namespace MergeSort
 
             if (i == leftArray.Length)
             {
-                // Copy right array into main array
+                // Copy remaining right array into main array
                 Array.Copy(rightArray, j, mainArray, k, rightArray.Length - j);
             }
             else
             {
-                // Copy left array into main array
+                // Copy remaining left array into main array
                 Array.Copy(leftArray, i, mainArray, k, leftArray.Length - i);
             }
 
