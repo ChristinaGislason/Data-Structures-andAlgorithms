@@ -30,5 +30,17 @@ namespace XUnitTestProject1
             Assert.Equal(expectedArr, arr);
         }
 
+        /// <summary>
+        /// Test InsertionSort method for large array
+        /// </summary>
+        [Fact]
+        public void TestInsertionSortForLargeArray()
+        {
+            int[] arr = { 365, 555, 10, 252, 1001, 7 };
+            int[] expectedArr = { 7, 10, 252, 365, 555, 1001 };
+            Program.InsertionSort(arr);
+            Assert.Equal(expectedArr, arr);
+        }
+
     }
 }
