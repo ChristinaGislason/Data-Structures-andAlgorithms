@@ -8,6 +8,8 @@
 
 #### IMPLEMENT: Hash Tables
 
+#### IMPLEMENT: Insertion Sort
+
 #### IMPLEMENT: Quick Sort
 
 #### IMPLEMENT: Merge Sort
