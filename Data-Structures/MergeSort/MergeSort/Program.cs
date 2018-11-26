@@ -2,7 +2,7 @@
 
 namespace MergeSort
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -34,7 +34,7 @@ namespace MergeSort
             Console.WriteLine(string.Join(",", myArray));
         }
 
-        public static int[] Merge(int[] leftArray, int[] rightArray, int[] mainArray)
+        private static int[] Merge(int[] leftArray, int[] rightArray, int[] mainArray)
         {
             // Left pointer
             int i = 0;
