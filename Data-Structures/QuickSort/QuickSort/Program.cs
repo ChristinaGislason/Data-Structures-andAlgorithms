@@ -2,16 +2,16 @@
 
 namespace QuickSort
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             int[] myArray = { 4, 2, 6, 5, 1, 3, 7 };
             QuickSort(myArray, 0, myArray.Length - 1);
         }
 
-        static void QuickSort(int[] arr, int left, int right)
+        public static void QuickSort(int[] arr, int left, int right)
         {
             if (left < right)
             {
@@ -38,7 +38,6 @@ namespace QuickSort
                     low++;
                     Swap(arr, i, low);
                 }
-
             }
 
             Swap(arr, right, low + 1);
