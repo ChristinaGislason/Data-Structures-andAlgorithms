@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\XUnitTestProject1\XUnitTestProject1.csproj" />
+    <ProjectReference Include="..\InsertionSort\InsertionSort.csproj" />
   </ItemGroup>
 
 </Project>
